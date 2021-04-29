@@ -1,5 +1,5 @@
 # react-native-keycloak-plugin
-This is a fork of mahomahoxd's react-native-login-keycloak module. I started from that to build some new feature using a functional style.
+This is a fork of lucataglia's react-native-login-keycloak module. I started from that to build to fix some issues.
 
 This plugin exposes some util methods to interact with [Keycloak][KeycloakHome] in order to handle the user session. 
 
@@ -14,13 +14,13 @@ This plugin exposes some util methods to interact with [Keycloak][KeycloakHome] 
 ### Using npm
 
 ```shell
-npm i --save react-native-keycloak-plugin
+npm i --save @locspect/react-native-keycloak-plugin
 ```
 
 ### Using yarn
 
 ```shell
-yarn add react-native-keycloak-plugin
+yarn add @locspect/react-native-keycloak-plugin
 ```
 
 ## Setup
@@ -169,8 +169,8 @@ TokensUtils.willAccessTokenExpireInLessThen(10)
 ```
 This utils method check if the access token saved into the AsyncStorage will expire in less than 10 seconds. Since it interact witht the AsyncStorage, a promise must be handled.
 
-[InstallAnchor]: <https://github.com/lucataglia/react-native-keycloak-plugin#install>
-[SetupAnchor]: <https://github.com/lucataglia/react-native-keycloak-plugin#setup>
-[APIAnchor]: <https://github.com/lucataglia/react-native-keycloak-plugin#api>
-[UtilsAnchor]: <https://github.com/lucataglia/react-native-keycloak-plugin#utils>
+[InstallAnchor]: <https://github.com/locspect/react-native-keycloak-plugin#install>
+[SetupAnchor]: <https://github.com/locspect/react-native-keycloak-plugin#setup>
+[APIAnchor]: <https://github.com/locspect/react-native-keycloak-plugin#api>
+[UtilsAnchor]: <https://github.com/locspect/react-native-keycloak-plugin#utils>
 [KeycloakHome]: <https://www.keycloak.org/getting-started>
