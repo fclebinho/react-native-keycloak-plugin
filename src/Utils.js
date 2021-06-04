@@ -1,6 +1,6 @@
 import { decode as atob } from 'base-64';
 import * as qs from 'query-string';
-import uuidv4 from 'uuid/v4';
+import { v4 as uuidv4 } from 'uuid';
 import TokenStorage from './TokenStorage';
 
 
