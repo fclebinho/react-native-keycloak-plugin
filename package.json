@@ -1,6 +1,6 @@
 {
-  "name": "@locspect/react-native-keycloak-plugin",
-  "version": "1.0.2",
+  "name": "@fclebinho/react-native-keycloak-plugin",
+  "version": "0.1.0",
   "description": "Functional React Native module for authentication between a client and the keycloak server.",
   "main": "src/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/locspect/react-native-keycloak-plugin.git"
+    "url": "git+https://github.com/fclebinho/react-native-keycloak-plugin.git"
   },
   "keywords": [
     "auth",
@@ -24,9 +24,9 @@
   "author": "Serge Nassar",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/locspect/react-native-keycloak-plugin/issues"
+    "url": "https://github.com/fclebinho/react-native-keycloak-plugin/issues"
   },
-  "homepage": "https://github.com/locspect/react-native-keycloak-plugin#readme",
+  "homepage": "https://github.com/fclebinho/react-native-keycloak-plugin#readme",
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.13.0",
     "base-64": "^1.0.0",

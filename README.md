@@ -14,13 +14,13 @@ This plugin exposes some util methods to interact with [Keycloak][KeycloakHome] 
 ### Using npm
 
 ```shell
-npm i --save @locspect/react-native-keycloak-plugin
+npm i --save @fclebinho/react-native-keycloak-plugin
 ```
 
 ### Using yarn
 
 ```shell
-yarn add @locspect/react-native-keycloak-plugin
+yarn add @fclebinho/react-native-keycloak-plugin
 ```
 
 ## Setup
@@ -37,7 +37,7 @@ Also, add the applinks: `<APPSITE HOST>` entry to the Associated Domains Capabil
 ### Imports
 The plugin uses an export default statement, so you can import the variable with: 
 ```js
-import Keycloak from 'react-native-keycloak-plugin';
+import Keycloak from '@fclebinho/react-native-keycloak-plugin';
 ```
 From that variable, you have access to all the util methods the plugin implements.
 
@@ -118,7 +118,7 @@ This method will re-login your user by recycling the last combination of usernam
 #### Manually handling the tokens
 
 ```js
-import Keycloak, { TokenStorage } from 'react-native-keycloak-plugin'
+import Keycloak, { TokenStorage } from '@fclebinho/react-native-keycloak-plugin'
 ```
 
 Logging in by the login function will save the tokens information, and the configuration object into the AsyncStorage.<br>Through the TokenStorage object, the plugin exports some methods that can be used to interact with these objects.
@@ -151,7 +151,7 @@ Passing a configuration JSON object, the method call takes care of logging out t
 ## Utils
 ### TokensUtils.isAccessTokenExpired
 ```js
-import { TokensUtils } from 'react-native-keycloak-plugin';
+import { TokensUtils } from '@fclebinho/react-native-keycloak-plugin';
 
 TokensUtils.isAccessTokenExpired()
   .then(() => /* Your resolve */ );
@@ -161,7 +161,7 @@ This utils method check if the access token saved into the AsyncStorage is still
 
 ### TokensUtils.willAccessTokenExpireInLessThen
 ```js
-import { TokensUtils } from 'react-native-keycloak-plugin';
+import { TokensUtils } from '@fclebinho/react-native-keycloak-plugin';
 
 TokensUtils.willAccessTokenExpireInLessThen(10)
   .then(() => /* Your resolve */ );
@@ -169,8 +169,8 @@ TokensUtils.willAccessTokenExpireInLessThen(10)
 ```
 This utils method check if the access token saved into the AsyncStorage will expire in less than 10 seconds. Since it interact witht the AsyncStorage, a promise must be handled.
 
-[InstallAnchor]: <https://github.com/locspect/react-native-keycloak-plugin#install>
-[SetupAnchor]: <https://github.com/locspect/react-native-keycloak-plugin#setup>
-[APIAnchor]: <https://github.com/locspect/react-native-keycloak-plugin#api>
-[UtilsAnchor]: <https://github.com/locspect/react-native-keycloak-plugin#utils>
+[InstallAnchor]: <https://github.com/fclebinho/react-native-keycloak-plugin#install>
+[SetupAnchor]: <https://github.com/fclebinho/react-native-keycloak-plugin#setup>
+[APIAnchor]: <https://github.com/fclebinho/react-native-keycloak-plugin#api>
+[UtilsAnchor]: <https://github.com/fclebinho/react-native-keycloak-plugin#utils>
 [KeycloakHome]: <https://www.keycloak.org/getting-started>
