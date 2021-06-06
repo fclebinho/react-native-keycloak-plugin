@@ -65,6 +65,7 @@ const performLogin = async (conf, username, password, scope = 'info') => {
   } = conf;
   const url = `${getRealmURL(realm, authServerUrl)}/protocol/openid-connect/token`;
   const method = POST;
+
   const body = qs.stringify({
     grant_type: 'password',
     username,
@@ -73,7 +74,10 @@ const performLogin = async (conf, username, password, scope = 'info') => {
     client_secret: credentials ? credentials.secret : undefined,
     scope,
   });
-  const options = { headers: basicHeaders, method, body };
+
+  const options = {
+    headers: basicHeaders, method, body, mode: 'no-cors',
+  };
 
   const fullResponse = await fetch(url, options);
   const jsonResponse = await fullResponse.json();
