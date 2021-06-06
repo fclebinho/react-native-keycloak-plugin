@@ -14,13 +14,15 @@ This plugin exposes some util methods to interact with [Keycloak][KeycloakHome] 
 ### Using npm
 
 ```shell
-npm i --save @fclebinho/react-native-keycloak-plugin
+npm i --save @fclebinho/react-native-keycloak-plugin @react-native-async-storage/async-storage
+cd ios/ && pod install 
 ```
 
 ### Using yarn
 
 ```shell
-yarn add @fclebinho/react-native-keycloak-plugin
+yarn add @fclebinho/react-native-keycloak-plugin @react-native-async-storage/async-storage
+cd ios/ && pod install 
 ```
 
 ## Setup
