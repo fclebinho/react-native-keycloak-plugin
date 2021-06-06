@@ -1,6 +1,6 @@
 {
   "name": "@fclebinho/react-native-keycloak-plugin",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Functional React Native module for authentication between a client and the keycloak server.",
   "main": "src/index.js",
   "scripts": {
@@ -28,7 +28,6 @@
   },
   "homepage": "https://github.com/fclebinho/react-native-keycloak-plugin#readme",
   "dependencies": {
-    "@react-native-async-storage/async-storage": "^1.15.5",
     "base-64": "^1.0.0",
     "query-string": "^7.0.0",
     "react-native": "0.63.4",
